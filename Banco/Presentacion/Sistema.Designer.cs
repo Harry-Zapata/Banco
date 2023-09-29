@@ -48,6 +48,7 @@
             this.btnHistorial = new System.Windows.Forms.Button();
             this.btnSalir = new System.Windows.Forms.Button();
             this.btnCopiar = new System.Windows.Forms.Button();
+            this.btnIngSal = new System.Windows.Forms.Button();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -155,20 +156,20 @@
             this.reporteToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(689, 30);
+            this.menuStrip1.Size = new System.Drawing.Size(689, 28);
             this.menuStrip1.TabIndex = 20;
             this.menuStrip1.Text = "menuStrip1";
             // 
             // transaccionToolStripMenuItem
             // 
             this.transaccionToolStripMenuItem.Name = "transaccionToolStripMenuItem";
-            this.transaccionToolStripMenuItem.Size = new System.Drawing.Size(100, 26);
+            this.transaccionToolStripMenuItem.Size = new System.Drawing.Size(100, 24);
             this.transaccionToolStripMenuItem.Text = "Transaccion";
             // 
             // historialToolStripMenuItem
             // 
             this.historialToolStripMenuItem.Name = "historialToolStripMenuItem";
-            this.historialToolStripMenuItem.Size = new System.Drawing.Size(79, 26);
+            this.historialToolStripMenuItem.Size = new System.Drawing.Size(79, 24);
             this.historialToolStripMenuItem.Text = "Historial";
             // 
             // reporteToolStripMenuItem
@@ -177,27 +178,26 @@
             this.añoToolStripMenuItem,
             this.generalToolStripMenuItem});
             this.reporteToolStripMenuItem.Name = "reporteToolStripMenuItem";
-            this.reporteToolStripMenuItem.Size = new System.Drawing.Size(76, 26);
+            this.reporteToolStripMenuItem.Size = new System.Drawing.Size(76, 24);
             this.reporteToolStripMenuItem.Text = "Reporte";
             // 
             // añoToolStripMenuItem
             // 
             this.añoToolStripMenuItem.Name = "añoToolStripMenuItem";
-            this.añoToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.añoToolStripMenuItem.Size = new System.Drawing.Size(143, 26);
             this.añoToolStripMenuItem.Text = "Fecha";
             // 
             // generalToolStripMenuItem
             // 
             this.generalToolStripMenuItem.Name = "generalToolStripMenuItem";
-            this.generalToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.generalToolStripMenuItem.Size = new System.Drawing.Size(143, 26);
             this.generalToolStripMenuItem.Text = "General";
-            this.generalToolStripMenuItem.Click += new System.EventHandler(this.generalToolStripMenuItem_Click);
             // 
             // button1
             // 
             this.button1.Image = global::Banco.Properties.Resources._3668846_money_send_transaction_transfer_108025;
             this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.Location = new System.Drawing.Point(464, 75);
+            this.button1.Location = new System.Drawing.Point(464, 53);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(177, 64);
             this.button1.TabIndex = 2;
@@ -210,7 +210,7 @@
             // 
             this.btnHistorial.Image = global::Banco.Properties.Resources.cab_history_archive_archives_7219;
             this.btnHistorial.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnHistorial.Location = new System.Drawing.Point(464, 196);
+            this.btnHistorial.Location = new System.Drawing.Point(464, 142);
             this.btnHistorial.Name = "btnHistorial";
             this.btnHistorial.Size = new System.Drawing.Size(177, 67);
             this.btnHistorial.TabIndex = 12;
@@ -244,6 +244,19 @@
             this.btnCopiar.UseVisualStyleBackColor = true;
             this.btnCopiar.Click += new System.EventHandler(this.btnCopiar_Click);
             // 
+            // btnIngSal
+            // 
+            this.btnIngSal.Image = global::Banco.Properties.Resources.generatekeysarrows_generar_llave_1490;
+            this.btnIngSal.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnIngSal.Location = new System.Drawing.Point(464, 227);
+            this.btnIngSal.Name = "btnIngSal";
+            this.btnIngSal.Size = new System.Drawing.Size(177, 67);
+            this.btnIngSal.TabIndex = 21;
+            this.btnIngSal.Text = "Ingresos y Salidas";
+            this.btnIngSal.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnIngSal.UseVisualStyleBackColor = true;
+            this.btnIngSal.Click += new System.EventHandler(this.btnIngSal_Click);
+            // 
             // Sistema
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -251,6 +264,7 @@
             this.BackColor = System.Drawing.Color.White;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(689, 420);
+            this.Controls.Add(this.btnIngSal);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.btnHistorial);
             this.Controls.Add(this.lblNumeroCuenta);
@@ -300,5 +314,6 @@
         private System.Windows.Forms.ToolStripMenuItem reporteToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem añoToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem generalToolStripMenuItem;
+        private System.Windows.Forms.Button btnIngSal;
     }
 }

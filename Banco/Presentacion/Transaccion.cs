@@ -82,5 +82,10 @@ namespace Banco.Presentacion
 
             }
         }
+
+        private void dtFecha_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

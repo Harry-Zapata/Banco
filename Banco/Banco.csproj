@@ -56,19 +56,15 @@
     <Compile Include="CapaDatos\MetodoCliente.cs" />
     <Compile Include="CapaDatos\MetodoCuenta.cs" />
     <Compile Include="CapaDatos\MetodoInfoGeneral.cs" />
+    <Compile Include="CapaDatos\MetodoIngreso.cs" />
     <Compile Include="CapaDatos\MetodoMovimiento.cs" />
     <Compile Include="CapaDatos\MetodoTransaccion.cs" />
     <Compile Include="CapaLogica\CLSCliente.cs" />
     <Compile Include="CapaLogica\CLSCuenta.cs" />
     <Compile Include="CapaLogica\CLSInfoGeneral.cs" />
+    <Compile Include="CapaLogica\CLSIngreso.cs" />
     <Compile Include="CapaLogica\CLSMovimientos.cs" />
     <Compile Include="CapaLogica\CLSTransaccion.cs" />
-    <Compile Include="PDFReporteGeneral.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>PDFReporteGeneral.rpt</DependentUpon>
-      <SubType>Component</SubType>
-    </Compile>
     <Compile Include="Presentacion\Historial.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -80,6 +76,12 @@
     </Compile>
     <Compile Include="Presentacion\Ingresar.Designer.cs">
       <DependentUpon>Ingresar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Presentacion\IngresosSalidas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentacion\IngresosSalidas.Designer.cs">
+      <DependentUpon>IngresosSalidas.cs</DependentUpon>
     </Compile>
     <Compile Include="Presentacion\RegistrarCliente.cs">
       <SubType>Form</SubType>
@@ -93,11 +95,11 @@
     <Compile Include="Presentacion\RegistrarCuenta.Designer.cs">
       <DependentUpon>RegistrarCuenta.cs</DependentUpon>
     </Compile>
-    <Compile Include="Presentacion\Reportes\ReporteGeneral.cs">
+    <Compile Include="Presentacion\Reportes\Factura.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Presentacion\Reportes\ReporteGeneral.Designer.cs">
-      <DependentUpon>ReporteGeneral.cs</DependentUpon>
+    <Compile Include="Presentacion\Reportes\Factura.Designer.cs">
+      <DependentUpon>Factura.cs</DependentUpon>
     </Compile>
     <Compile Include="Presentacion\Sistema.cs">
       <SubType>Form</SubType>
@@ -113,15 +115,20 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="PDFReporteGeneral.rpt">
-      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
-      <LastGenOutput>PDFReporteGeneral.cs</LastGenOutput>
-    </EmbeddedResource>
+    <Compile Include="ReporteFactura.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ReporteFactura.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
     <EmbeddedResource Include="Presentacion\Historial.resx">
       <DependentUpon>Historial.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Presentacion\Ingresar.resx">
       <DependentUpon>Ingresar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentacion\IngresosSalidas.resx">
+      <DependentUpon>IngresosSalidas.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Presentacion\RegistrarCliente.resx">
       <DependentUpon>RegistrarCliente.cs</DependentUpon>
@@ -129,8 +136,8 @@
     <EmbeddedResource Include="Presentacion\RegistrarCuenta.resx">
       <DependentUpon>RegistrarCuenta.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Presentacion\Reportes\ReporteGeneral.resx">
-      <DependentUpon>ReporteGeneral.cs</DependentUpon>
+    <EmbeddedResource Include="Presentacion\Reportes\Factura.resx">
+      <DependentUpon>Factura.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Presentacion\Sistema.resx">
       <DependentUpon>Sistema.cs</DependentUpon>
@@ -148,6 +155,10 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="ReporteFactura.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>ReporteFactura.cs</LastGenOutput>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -227,5 +238,6 @@
   <ItemGroup>
     <None Include="Resources\clipboard_note_document_report_paper_icon_192535.png" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

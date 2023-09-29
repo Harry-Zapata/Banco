@@ -31,4 +31,5 @@ C:\Proyectos\SistemaDeVentasAngular\Banco\Banco\bin\Debug\stdole.dll
 C:\Proyectos\SistemaDeVentasAngular\Banco\Banco\obj\Debug\Banco.csproj.CopyComplete
 C:\Proyectos\SistemaDeVentasAngular\Banco\Banco\obj\Debug\Banco.Presentacion.Transaccion.resources
 C:\Proyectos\SistemaDeVentasAngular\Banco\Banco\obj\Debug\Banco.Presentacion.Historial.resources
-C:\Proyectos\SistemaDeVentasAngular\Banco\Banco\obj\Debug\Banco.Presentacion.Reportes.ReporteGeneral.resources
+C:\Proyectos\SistemaDeVentasAngular\Banco\Banco\obj\Debug\Banco.Presentacion.IngresosSalidas.resources
+C:\Proyectos\SistemaDeVentasAngular\Banco\Banco\obj\Debug\Banco.Presentacion.Reportes.Factura.resources

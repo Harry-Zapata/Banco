@@ -1,6 +1,5 @@
 ﻿using Banco.CapaDatos;
 using Banco.CapaLogica;
-using Banco.Presentacion.Reportes;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -80,15 +79,11 @@ namespace Banco.Presentacion
             frm.ShowDialog();
         }
 
-        private void repoToolStripMenuItem_Click(object sender, EventArgs e)
+        private void btnIngSal_Click(object sender, EventArgs e)
         {
-
-        }
-
-        private void generalToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-            ReporteGeneral frm = new ReporteGeneral();
-            frm.DATO = this.lblNumeroCuenta.Text;
+            IngresosSalidas frm = new IngresosSalidas();
+            frm.nro_cta = lblNumeroCuenta.Text;
+            frm.FormClosed += FormularioCerrado;
             frm.ShowDialog();
         }
     }

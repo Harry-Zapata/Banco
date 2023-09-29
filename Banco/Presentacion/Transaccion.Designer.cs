@@ -210,6 +210,7 @@
             this.dtFecha.Name = "dtFecha";
             this.dtFecha.Size = new System.Drawing.Size(292, 22);
             this.dtFecha.TabIndex = 17;
+            this.dtFecha.ValueChanged += new System.EventHandler(this.dtFecha_ValueChanged);
             // 
             // btnTransferir
             // 
