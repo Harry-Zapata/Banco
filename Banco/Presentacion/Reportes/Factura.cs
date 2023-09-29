@@ -23,7 +23,7 @@ namespace Banco.Presentacion.Reportes
             ReporteFactura reporte = new ReporteFactura();
             crystalReportViewer1.ReportSource = reporte;
             reporte.SetParameterValue("@nro_mov", this.cod_mov);
-            reporte.SetDatabaseLogon("sa", "Harry2112");
+            reporte.SetDatabaseLogon("sa", "Senati");
         }
 
         private void crystalReportViewer1_Load(object sender, EventArgs e)

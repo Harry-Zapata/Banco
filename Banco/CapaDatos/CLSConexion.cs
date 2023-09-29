@@ -10,7 +10,7 @@ namespace Banco.CapaDatos
     {
         public static String cnCadena()
         {
-            String Str = "SERVER=ZAPATA\\SQLEXPRESS;DataBase=BANCO;UID=sa;PWD=Harry2112";
+            String Str = "SERVER=ZAPATA\\SQLEXPRESS;DataBase=BANCO;UID=sa;PWD=Senati";
             return Str;
         }
     }
